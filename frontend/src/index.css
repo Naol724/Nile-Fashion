@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-deep-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-sky-blue text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-400 transition-all duration-300 transform hover:scale-105 shadow-lg;
+  }
+  
+  .card-hover {
+    @apply transition-all duration-300 transform hover:scale-105 hover:shadow-xl;
+  }
+  
+  .section-padding {
+    @apply px-4 py-12 sm:px-6 lg:px-8 lg:py-16;
+  }
+}
